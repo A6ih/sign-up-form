@@ -31,36 +31,37 @@
                     <span>
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" name="first-name" id="first-name"
-                        required placeholder="Thor">
+                        required placeholder="Thor" />
                     </span>
                     <span>
                         <label for="last-name">LAST NAME</label>
                         <input type="text" name="last-name" id="last-name"
-                        required placeholder="Odinson">
+                        required placeholder="Odinson" />
                     </span>
                 </div>
                 <div class="form-row">
                     <span>
                         <label for="user-email">EMAIL</label>
                         <input type="email" name="user-email" id="user-email"
-                        required placeholder="thor@example.com">
+                        required placeholder="thor@example.com" />
                     </span>
                     <span>
                         <label for="phone-number">PHONE NUMBER</label>
                         <input type="tel" name="phone-number" id="phone-number"
-                        required placeholder="+1234567898">
+                        required placeholder="+1234567898"
+                        pattern="^(\+|00)[1-9][0-9 \-\(\)\.]{7,32}$" />
                     </span>
                 </div>
                 <div class="form-row">
                     <span>
                         <label for="user-password">PASSWORD</label>
                         <input type="password" name="user-password" id="user-password"
-                        required>
+                        required minlength="6" maxlength="12"/>
                     </span>
                     <span>
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="tel" name="confirm-password" id="confirm-password"
-                        required>
+                        <input type="password" name="confirm-password" id="confirm-password"
+                        required minlength="6" maxlength="12"/>
                     </span>
                 </div>
             </form>
