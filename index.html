@@ -8,14 +8,64 @@
 </head>
 <body>
     <main>
-        <div id="image-container">
+        <div id="img-container">
             <img src="./img/halie-west-25xggax4bSA-unsplash.jpg" 
-            alt="green leaf plant in close up">
-            <div>
-                <img id="logo-img" src="./img/odin-lined.png" alt="The Odin Project logo">
+            alt="green leaf plant in close up" id="background-img">
+            <div id="logo-container">
+                <img id="logo-img" src="./img/odin-lined.png"
+                 alt="The Odin Project logo">
                 <h1 id="logo-text">ODIN</h1>
             </div>
             <p id="img-credit">Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+        </div>
+
+        <div id="form-container">
+            <h3>This is not a real online service! You know you need something like
+                this in your life to help you realize your deepest dreams.<br>
+                Sign up <em>now</em> to get started.<br><br>
+                You <em>know</em> you want to.
+            </h3>
+            <form action="" method="post" id="main-form">
+                <h3>Let's do this</h3>
+                <div class="form-row">
+                    <span>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name"
+                        required placeholder="Thor">
+                    </span>
+                    <span>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name"
+                        required placeholder="Odinson">
+                    </span>
+                </div>
+                <div class="form-row">
+                    <span>
+                        <label for="user-email">EMAIL</label>
+                        <input type="email" name="user-email" id="user-email"
+                        required placeholder="thor@example.com">
+                    </span>
+                    <span>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number"
+                        required placeholder="+1234567898">
+                    </span>
+                </div>
+                <div class="form-row">
+                    <span>
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password" name="user-password" id="user-password"
+                        required>
+                    </span>
+                    <span>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="tel" name="confirm-password" id="confirm-password"
+                        required>
+                    </span>
+                </div>
+            </form>
+            <button type="submit" form="main-form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </main>
 </body>
